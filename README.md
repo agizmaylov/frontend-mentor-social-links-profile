@@ -8,8 +8,8 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ## Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://www.frontendmentor.io/solutions/social-links-profile-via-flexbox-QRcryPLYBh
+- Live Site URL: https://agizmaylov.github.io/frontend-mentor-social-links-profile/
 - All solutions: https://agizmaylov.github.io/frontend-mentor-solutions/
 
 ## Built with
