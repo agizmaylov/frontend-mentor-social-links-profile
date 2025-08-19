@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "Inter";
+    src: local("Inter"),
+         url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*=== Normalize and reset ===*/
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+    line-height: 3.125ex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+h1,
+h2 {
+    line-height: 2.38ex;
+}
+
+h3 {
+    line-height: 2.63ex;
+}
+
+h4 {
+    line-height: 2.7ex;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+ol[role="list"],
+ul[role="list"] {
+    list-style: none;
+    padding-inline: 0;
+}
+
+/*=== Normalize and reset end ===*/
+
+:root {
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-gray-700: hsl(0, 0%, 20%);
+    --color-gray-800: hsl(0, 0%, 12%);
+    --color-gray-900: hsl(0, 0%, 8%);
+
+    --font-n: clamp(0.875rem, 0.775rem + 0.15vw, 1.075rem);
+    --font-l: calc(var(--font-n) * 1.65);
+}
+
+.page-social-links-profile {
+    min-height: 100vh;
+    background-color: var(--color-gray-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links-card {
+    width: min(100%, 385px);
+    padding: min(6.4vw, 2.5rem);
+    margin: 1.5rem;
+    border-radius: 0.8rem;
+
+    background-color: var(--color-gray-800);
+    color: var(--color-white);
+
+    font-family: "Inter", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: var(--font-n);
+    text-align: center;
+}
+
+.social-links-card__picture {
+    border-radius: 50%;
+    height: 90px;
+    width: auto;
+}
+
+.social-links-card__name {
+    margin-top: 1em;
+    font-size: var(--font-l);
+    font-weight: 700;
+}
+
+.social-links-card__location {
+    margin: 0.4em 0;
+    font-weight: 600;
+    color: var(--color-green)
+}
+
+.social-links-card__occupation {
+    margin: 1.5em 0;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.social-links__link {
+    display: block;
+    padding: 1.1em;
+    border-radius: 0.5rem;
+
+    background-color: var(--color-gray-700);
+    color: var(--color-white);
+
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover,
+    &:active {
+        background-color: var(--color-green);
+        color: var(--color-gray-900);
+    }
+}
