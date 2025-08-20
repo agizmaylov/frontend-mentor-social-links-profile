@@ -1,9 +1,10 @@
 @font-face {
     font-family: "Inter";
     src: local("Inter"),
-         url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+         url(assets/fonts/Inter-VariableFont_slnt\,wght.woff2) format(woff2) tech(variations),
+         url(assets/fonts/Inter-VariableFont_slnt\,wght.woff2) format("woff2-variations");
     font-weight: 100 900;
-    font-style: normal;
+    font-style: oblique -10deg 0deg;
     font-display: swap;
 }
 
